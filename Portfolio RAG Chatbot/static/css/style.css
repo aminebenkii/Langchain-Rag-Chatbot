@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    background-color: #1b2e53; /* Dark blue from the logo */
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Container */
+#app-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    height: 90vh;
+    margin: 5vh auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background-color: #1b2e53; /* Dark blue from the logo */
+    color: #9adb43; /* Lime green from the logo */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+/* Dark Mode Button */
+#theme-toggle {
+    background-color: #9adb43; /* Lime green */
+    color: #1b2e53; /* Dark blue */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#theme-toggle:hover {
+    background-color: #79b232; /* Slightly darker lime green */
+}
+
+/* Main Area */
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    background-color: #e5e5e5;
+    overflow-y: auto;
+}
+
+/* Chat Window */
+#chat-window {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.05);
+    scroll-behavior: smooth;
+}
+
+/* Messages */
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #daf8cb;
+    color: #000;
+    border-radius: 20px 20px 0 20px;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 20px 20px 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Section */
+#input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 0 0 12px 12px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    margin-right: 10px;
+    background-color: #e5e5e5;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #9adb43; /* Lime green */
+    color: #1b2e53; /* Dark blue */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#typing-indicator {
+    font-style: italic;
+    color: #252222; /* Grey color */
+    margin-top: 10px;
+}
+
+#send-button:hover {
+    background-color: #79b232; /* Slightly darker lime green */
+}
+
+/* Footer */
+footer {
+    background-color: #1b2e53; /* Dark blue */
+    color: #9adb43; /* Lime green */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode #app-container {
+    background-color: #333333;
+}
+
+.dark-mode header {
+    background-color: #121212;
+    color: #9adb43;
+}
+
+.dark-mode #input-container {
+    background-color: #2c2c2c;
+}
+
+.dark-mode .user-message {
+    background-color: #3b3b3b;
+}
+
+.dark-mode .bot-message {
+    background-color: #444444;
+}
+
+.dark-mode #send-button {
+    background-color: #9adb43;
+    color: #1b2e53;
+}
+
+.dark-mode footer {
+    background-color: #121212;
+}
